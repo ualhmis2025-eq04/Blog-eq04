@@ -20,13 +20,12 @@
 
 title: El super Blog del equipo 04
 email: jmi240@inlumine.ual.es
-email: gnr267@inlumine.ual.es
 description: >- # this means to ignore newlines until "baseurl:"
   
 baseurl: "/Blog-eq04" # the subpath of your site, e.g. /blog
 url: "https://ualhmis2025-eq04.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  ualjmi240
-github_username:  ualgnr267
+github_username:  https://github.com/ualhmis2025-eq04
+
 
 # Build settings
 theme: minima
