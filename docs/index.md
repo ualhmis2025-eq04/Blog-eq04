@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /inicio/
+title: Inicio
 ---
 # ⭐ **Bienvenido al blog de HMIS del equipo 04** ⭐
 
