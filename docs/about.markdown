@@ -1,7 +1,7 @@
 ---
 layout: page
-title: ¡Conocenos mejor!
-permalink: /Nosotros/
+title: Contacto
+permalink: /contacto/
 ---
 
 

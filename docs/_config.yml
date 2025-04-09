@@ -29,6 +29,8 @@ github_username:  https://github.com/ualhmis2025-eq04
 
 # Build settings
 theme: minima
+
+permalink: /:year/:month/:day/:slug/
 #plugins:
 #  - jekyll-feed
 
