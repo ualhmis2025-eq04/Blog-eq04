@@ -29,7 +29,7 @@ github_username:  https://github.com/ualhmis2025-eq04
 
 # Build settings
 theme: minima
-plugins:
+#plugins:
 #  - jekyll-feed
 
 # Exclude from processing.
