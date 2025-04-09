@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /inicio/
 ---
 # ⭐ **Bienvenido al blog de HMIS del equipo 04** ⭐
 
@@ -16,7 +17,7 @@ Este blog contendrá información relacionada con **Herramientas y Métodos de I
 <ul style="list-style-type: none; padding: 0;">
   {% for post in site.posts %}
     <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
-      <a href="{{ post.url }}" style="font-size: 1.5em; font-weight: bold;">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 1.5em; font-weight: bold;">{{ post.title }}</a>
       <p style="font-style: italic;">Fecha de publicación: {{ post.date | date: "%d/%m/%Y" }}</p>
     </li>
   {% endfor %}
