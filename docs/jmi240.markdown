@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Conoce a jmi240
+title: "Conoce a jmi240"
 permalink: /jmi240/
 ---
 ** Sobre mí: ** mi nombre es José Miranda Ibáñez, soy estudiante de tercer curso en el grado de ingeniería informática en la Universidad de Almería y resido en La Mojonera. Mis aficiones

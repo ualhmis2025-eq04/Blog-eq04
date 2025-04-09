@@ -33,7 +33,10 @@ theme: minima
 permalink: /:year/:month/:day/:slug/
 
 header_pages:
+  - Conoce a jmi240
   - Conoce a gnr267
+  - Contacto
+  
 #plugins:
 #  - jekyll-feed
 
