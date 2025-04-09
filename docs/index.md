@@ -2,23 +2,28 @@
 layout: default
 title: Inicio
 ---
-# ✨ Bienvenido al blog de HMIS del equipo 04 ✨
+# ✨ **Bienvenido al blog de HMIS del equipo 04** ✨
 
-## Nuestro objetivo 
+<br>
 
-Este blog contendrá información relacionada con las **Herramientas y Métodos de Ingeniería Informática**, con el fin de expandir el conocimiento de las prácticas que sustentan esta disciplina. En los post encontrarás conceptos, técnicas y herramientas esenciales que todo ingeniero informático que se respeta debe conocer. 
+## Nuestro objetivo
 
-## ⭐ Últimos posts 
+Este blog contendrá información relacionada con las **Herramientas y Métodos de Ingeniería Informática**, con el fin de expandir el conocimiento de las prácticas que sustentan esta disciplina. En los post encontrarás conceptos, técnicas y herramientas esenciales que todo ingeniero informático que se respeta debe conocer.
+ 
+<br>
 
-<ul>
+# ⭐ Últimos posts ⭐
+
+<ul style="list-style-type: none; padding: 0;">
   {% for post in site.posts %}
     <li>
-      <strong>{{ post.date | date: "%d-%m-%Y" }}</strong> - 
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}" style="font-size: 1.5em; font-weight: bold;">{{ post.title }}</a>
+      <p style="font-style: italic;">Fecha de publicación: {{ post.date | date: "%d/%m/%Y" }}</p>
     </li>
   {% endfor %}
 </ul>
 
+<br>
 
 ## ¡Te invitamos a conocernos! ☆*: .｡. o(≧▽≦)o .｡.:*☆
 Somos José Miranda Ibáñez y Giovanna Yamile Nuño Rodríguez, estudiantes de Ingeniería Informática apasionados por la tecnología.
