@@ -1,9 +1,11 @@
 ---
 layout: page
+title: Contacto
 permalink: /contacto/
 ---
+<br>
 
-# Contacta con nosotros (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+# Acercate a nosotros (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 
 ¡Estamos para ayudarte! Si tienes algún comentario, sugerencia o duda estaremos encantados de escucharte :)
 
