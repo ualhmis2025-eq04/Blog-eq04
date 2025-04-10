@@ -37,7 +37,7 @@ Este diseño permite mucha precisión: puedes modificar varios archivos y solo p
 
 <br>
 
-<img src="{{ site.baseurl }}/assets/git-flow.png" alt="Flujo Git" draggable="false" style="width: 300px; height: auto;">
+<img src="{{ site.baseurl }}/assets/git-flow.png" alt="Flujo Git" draggable="false" style="width: 500px; height: auto; display: block; margin: 0 auto;">
 
 <br>
 
@@ -114,7 +114,7 @@ Pero para entenderlo bien, primero hay que conocer dos formas en que Git puede "
 
 <br>
 
-<img src="{{ site.baseurl }}/assets/rebase-merge.png" alt="rebase vs merge" draggable="false" style="width: 300px; height: auto;">
+<img src="{{ site.baseurl }}/assets/rebase-merge.png" alt="rebase vs merge" draggable="false" style="width: 500px; height: auto;display: block; margin: 0 auto;">
 
 <br>
 
