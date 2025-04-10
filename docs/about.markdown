@@ -1,16 +1,9 @@
 ---
 layout: page
-title: "Contacto"
 permalink: /contacto/
 ---
 
----
-layout: default
-title: Contacto
-permalink: /contacto/
----
-
-<h1>Contacta con nosotros (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h1>
+# Contacta con nosotros (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 
 ¡Estamos para ayudarte! Si tienes algún comentario, sugerencia o duda estaremos encantados de escucharte :)
 

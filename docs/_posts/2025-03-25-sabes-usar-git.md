@@ -3,8 +3,6 @@ layout: post
 title:  "¿Sabes usar Git?"
 date:   2025-03-25 22:09:46 +0100
 ---
-# **¿Sabes usar Git?**
-<br>
 
 Git es una de las herramientas más utilizadas por desarrolladores de todo el mundo… y también una de las más temidas. Aunque casi todos lo usan a diario, **pocos entienden realmente cómo funciona por dentro**. Se vuelve una especie de caja negra: escribimos comandos que "mágicamente" sincronizan o guardan cambios, pero sin saber bien qué está ocurriendo en realidad.
 
@@ -39,7 +37,7 @@ Este diseño permite mucha precisión: puedes modificar varios archivos y solo p
 
 <br>
 
-![Flujo Git](/docs/_assets/git-flow.png)
+![Flujo Git](/docs/assets/git-flow.png)
 
 <br>
 
@@ -116,7 +114,7 @@ Pero para entenderlo bien, primero hay que conocer dos formas en que Git puede "
 
 <br>
 
-![rebase vs merge](/docs/_assets/rebase-merge.png)
+![rebase vs merge](/docs/assets/rebase-merge.png)
 
 <br>
 
