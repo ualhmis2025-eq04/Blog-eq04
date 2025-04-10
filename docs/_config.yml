@@ -32,7 +32,15 @@ theme: minima
 
 permalink: /:year/:month/:day/:slug/
 
-  
+# Links header
+header_pages:
+  - jmi240.markdown
+  - gnr267.md
+  - about.markdown
+
+# Build settings
+theme: null
+
 #plugins:
 #  - jekyll-feed
 
