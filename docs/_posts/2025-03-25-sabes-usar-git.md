@@ -37,7 +37,7 @@ Este diseño permite mucha precisión: puedes modificar varios archivos y solo p
 
 <br>
 
-![Flujo Git](/docs/assets/git-flow.png)
+![Flujo Git](/assets/git-flow.png)
 
 <br>
 
@@ -114,7 +114,7 @@ Pero para entenderlo bien, primero hay que conocer dos formas en que Git puede "
 
 <br>
 
-![rebase vs merge](/docs/assets/rebase-merge.png)
+![rebase vs merge](/assets/rebase-merge.png)
 
 <br>
 

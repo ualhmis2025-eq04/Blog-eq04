@@ -27,6 +27,6 @@ Este blog contendrá información relacionada con **Herramientas y Métodos de I
 <br>
 
 ## ¡Te invitamos a conocernos! ☆*: .｡. o(≧▽≦)o .｡.:*☆
-Somos José Miranda Ibáñez y Giovanna Yamile Nuño Rodríguez, estudiantes de Ingeniería Informática apasionados por la tecnología. Nos puedes encontrar bajo los nombres de usuario jmi240 y gnr267. 
+Somos **José Miranda Ibáñez** y **Giovanna Yamile Nuño Rodríguez**, estudiantes de Ingeniería Informática apasionados por la tecnología. Nos puedes encontrar bajo los nombres de usuario **jmi240** y **gnr267**. 
 
 Si te interesa saber más de nosotros podrás encontrar información en las páginas individuales dedicadas a los miembros del equipo.
