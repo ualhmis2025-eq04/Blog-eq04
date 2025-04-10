@@ -3,11 +3,37 @@ layout: page
 title: Contacto
 permalink: /contacto/
 ---
-<br>
 
 # Acercate a nosotros (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 
 ¡Estamos para ayudarte! Si tienes algún comentario, sugerencia o duda estaremos encantados de escucharte :)
+
+<br>
+
+<style>
+  form {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #005fa3;
+  }
+</style>
 
 <form action="https://formspree.io/f/mqapwyoj" method="POST">
   <label for="name">Nombre:</label><br>

@@ -38,7 +38,7 @@ header_pages:
   - gnr267.md
   - about.markdown
 
-plugins:
+git plugins:
   - jekyll-feed
 
 # Exclude from processing.
