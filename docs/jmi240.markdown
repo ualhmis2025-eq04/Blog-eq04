@@ -3,4 +3,23 @@ layout: page
 title: "Conoce a jmi240"
 permalink: /jmi240/
 ---
-** Sobre mí: ** mi nombre es José Miranda Ibáñez, soy estudiante de tercer curso en el grado de ingeniería informática en la Universidad de Almería y resido en La Mojonera. Mis aficiones
+<br>
+
+<img src="{{ site.baseurl }}/assets/cat.png" alt="jmi240" draggable="false" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
+
+<br>
+
+# Hola, mi nombre es José Miranda Ibáñez
+
+Soy un estudiante de tercer curso de ingeniería informática en la Universidad de Almería, y la verdad está siendo toda una experiencia.
+
+<br>
+
+**¿Qué es lo que me gusta?** 
+- Los videojuegos. 
+- Cuidar de mis tres hermosos gatos. 🐈 
+- Los macarrones. 👍👍
+- Herramientas y Métodos de Ingeniería del Software. 😍 
+
+**Puedes encontrarme en GitHub aquí:** 👽
+<a href="https://github.com/ualjmi240" target="_blank"> ualjmi240</a> 
