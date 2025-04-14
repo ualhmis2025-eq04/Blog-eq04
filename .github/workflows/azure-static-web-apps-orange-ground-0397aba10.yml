@@ -26,8 +26,6 @@ jobs:
           bundler-cache: true
       - name: Jekyll build
         run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
