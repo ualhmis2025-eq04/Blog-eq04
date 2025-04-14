@@ -12,7 +12,7 @@ Visual Studio Code (VS Code) es uno de los editores de código más populares en
 
 Antes de comenzar, asegúrate de tener:
 
-- Un sistema operativo moderno (Windows, macOS o Linux)
+- Un sistema operativo que soporte VS Code (Windows, macOS o Linux)
 - Conexión a internet
 - Conocimientos básicos de HTML, CSS y/o JavaScript
 
@@ -110,7 +110,7 @@ Se recomienda revisar que el puerto 5500 no esté siendo usado por otro servicio
 
 ## 6. Agregar Git (opcional)
 
-Si desea usar Git para poder trabajar de forma remota, debe seguir los siguientes pasos:
+Si desea usar Git debe seguir los siguientes pasos:
 
 1. Instala Git desde git-scm.com
 2. Inicia tu repositorio:
@@ -122,6 +122,8 @@ git commit -m "Inicio del proyecto"
 3. Usa la integración nativa de Git en la barra lateral de VS Code para hacer commits y ver cambios.
 
 ## Recursos adicionales
+
+En este apartado se ofrecen algunos enlaces que consideramos que pueden ser útiles para el desarrollo web en Visual Studio Code:
 
 - [Documentación oficial de VS Code](https://code.visualstudio.com/docs)
 - [Curso gratuito de Git y GitHub](https://learngitbranching.js.org/)
