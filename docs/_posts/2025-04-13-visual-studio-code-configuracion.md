@@ -129,5 +129,5 @@ git commit -m "Inicio del proyecto"
 
 ## Conclusión
 
-Con Visual Studio Code y algunas extensiones clave puedes montar un entorno de desarrollo web en cuestión de minutos. Es flexible, ligero y perfecto tanto para principiantes como para desarrolladores avanzados. Esperamos que esto les haya ayudado a inciarse en el mundo del desarrollo,
+Con Visual Studio Code y algunas extensiones clave puedes montar un entorno de desarrollo web en cuestión de minutos. Es flexible, ligero y perfecto tanto para principiantes como para desarrolladores avanzados. Esperamos que esto les haya ayudado a inciarse en el mundo del desarrollo web haciendo uso de Visual Studio Code.
 
