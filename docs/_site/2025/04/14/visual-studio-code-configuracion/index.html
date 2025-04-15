@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Como configurar un entorno de desarrollo local con Visual Studio Code | El super Blog del equipo 04</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Como configurar un entorno de desarrollo local con Visual Studio Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Cómo configurar un entorno de desarrollo local con Visual Studio Code" />
+<meta property="og:description" content="Cómo configurar un entorno de desarrollo local con Visual Studio Code" />
+<link rel="canonical" href="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/04/14/visual-studio-code-configuracion/" />
+<meta property="og:url" content="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/04/14/visual-studio-code-configuracion/" />
+<meta property="og:site_name" content="El super Blog del equipo 04" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-14T00:22:46+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Como configurar un entorno de desarrollo local con Visual Studio Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-14T00:22:46+02:00","datePublished":"2025-04-14T00:22:46+02:00","description":"Cómo configurar un entorno de desarrollo local con Visual Studio Code","headline":"Como configurar un entorno de desarrollo local con Visual Studio Code","mainEntityOfPage":{"@type":"WebPage","@id":"https://ualhmis2025-eq04.github.io/Blog-eq04/2025/04/14/visual-studio-code-configuracion/"},"url":"https://ualhmis2025-eq04.github.io/Blog-eq04/2025/04/14/visual-studio-code-configuracion/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Blog-eq04/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://ualhmis2025-eq04.github.io/Blog-eq04/feed.xml" title="El super Blog del equipo 04" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Blog-eq04/">El super Blog del equipo 04</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Blog-eq04/jmi240/">Conoce a jmi240</a><a class="page-link" href="/Blog-eq04/gnr267/">Conoce a gnr267</a><a class="page-link" href="/Blog-eq04/contacto/">Contacto</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Como configurar un entorno de desarrollo local con Visual Studio Code</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-04-14T00:22:46+02:00" itemprop="datePublished">Apr 14, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="cómo-configurar-un-entorno-de-desarrollo-local-con-visual-studio-code">Cómo configurar un entorno de desarrollo local con Visual Studio Code</h1>
+
+<p>Visual Studio Code (VS Code) es uno de los editores de código más populares entre los desarrolladores web. Es rápido, extensible, gratuito y multiplataforma. En esta guía paso a paso aprenderás cómo configurar tu entorno local para comenzar a desarrollar sitios web de forma eficiente.</p>
+
+<h2 id="requisitos-previos">Requisitos previos</h2>
+
+<p>Antes de comenzar, asegúrate de tener:</p>
+
+<ul>
+  <li>Un sistema operativo que soporte VS Code (Windows, macOS o Linux)</li>
+  <li>Conexión a internet</li>
+  <li>Conocimientos básicos de HTML, CSS y/o JavaScript</li>
+</ul>
+
+<h2 id="1-instalar-visual-studio-code">1. Instalar Visual Studio Code</h2>
+
+<p>Dirígete a la <a href="https://code.visualstudio.com/">página oficial de Visual Studio Code</a> y descarga la versión correspondiente a tu sistema operativo.</p>
+
+<h3 id="en-windows-o-macos">En Windows o macOS</h3>
+
+<p>Sigue el instalador y acepta las opciones por defecto.</p>
+
+<h3 id="en-linux">En Linux</h3>
+
+<p>En distribuciones basadas en Debian/Ubuntu:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common apt-transport-https wget
+wget <span class="nt">-q</span> https://packages.microsoft.com/keys/microsoft.asc <span class="nt">-O-</span> | <span class="nb">sudo </span>apt-key add -
+<span class="nb">sudo </span>add-apt-repository <span class="s2">"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"</span>
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>code
+</code></pre></div></div>
+
+<h2 id="2-instalar-extensiones-recomendadas">2. Instalar extensiones recomendadas</h2>
+
+<p>VS Code se potencia con extensiones. Aquí van algunas esenciales para desarrollo web:</p>
+
+<ul>
+  <li>🌐 <strong>Live Server</strong>: Levanta un servidor local con recarga automática.</li>
+  <li>🎨 <strong>Prettier</strong>: Formateador de código automático.</li>
+  <li>📄 <strong>HTML/CSS Support</strong>: Autocompletado y ayudas visuales.</li>
+  <li>🧪 <strong>ESLint</strong>: Linter para JavaScript y buenas prácticas.</li>
+  <li>🌈 <strong>Color Highlight</strong>: Muestra colores directamente en tu código CSS.</li>
+</ul>
+
+<h3 id="cómo-instalarlas">¿Cómo instalarlas?</h3>
+
+<ol>
+  <li>Abre VS Code</li>
+  <li>Ve a la barra lateral izquierda (icono de extensiones o <code class="language-plaintext highlighter-rouge">Ctrl+Shift+X</code>)</li>
+  <li>Busca cada extensión y haz clic en “Instalar”</li>
+</ol>
+
+<h2 id="3-configurar-un-proyecto-básico">3. Configurar un proyecto básico</h2>
+
+<p>Puedes crear una carpeta nueva para tu proyecto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>mi-proyecto-web
+<span class="nb">cd </span>mi-proyecto-web
+code <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Crea un archivo <code class="language-plaintext highlighter-rouge">index.html</code> y escribe lo básico:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Mi Proyecto<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>¡Hola, mundo!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="4-usar-live-server">4. Usar Live Server</h2>
+
+<p>Una vez instalada la extensión <strong>Live Server</strong>:</p>
+
+<ol>
+  <li>Abre tu <code class="language-plaintext highlighter-rouge">index.html</code></li>
+  <li>Haz clic derecho → “<strong>Open with Live Server</strong>”</li>
+  <li>Se abrirá tu navegador en <code class="language-plaintext highlighter-rouge">http://127.0.0.1:5500</code> con tu sitio cargado</li>
+</ol>
+
+<p>Cada vez que guardes el archivo (<code class="language-plaintext highlighter-rouge">Ctrl+S</code>), la página se recargará automáticamente.</p>
+
+<h2 id="5-ajustes-útiles-en-vs-code">5. Ajustes útiles en VS Code</h2>
+
+<p>Presiona <code class="language-plaintext highlighter-rouge">Ctrl+,</code> para abrir la configuración y busca estos ajustes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">"editor.formatOnSave": true</code> → Autoformatea al guardar</li>
+  <li><code class="language-plaintext highlighter-rouge">"liveServer.settings.port": 5500</code> → Fija el puerto del servidor</li>
+  <li><code class="language-plaintext highlighter-rouge">"emmet.includeLanguages"</code> → Añade soporte para Emmet en más lenguajes</li>
+</ul>
+
+<p>También puedes configurar el archivo <code class="language-plaintext highlighter-rouge">.vscode/settings.json</code> así:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"editor.formatOnSave"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"files.autoSave"</span><span class="p">:</span><span class="w"> </span><span class="s2">"onWindowChange"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"liveServer.settings.port"</span><span class="p">:</span><span class="w"> </span><span class="mi">5500</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p>Se recomienda revisar que el puerto 5500 no esté siendo usado por otro servicio, y en caso de que lo esté, debe cambiarlo por otro puerto el cual esté seguro que no será usado.</p>
+
+<h2 id="6-agregar-git-opcional">6. Agregar Git (opcional)</h2>
+
+<p>Si desea usar Git debe seguir los siguientes pasos:</p>
+
+<ol>
+  <li>Instala Git desde git-scm.com</li>
+  <li>Inicia tu repositorio:
+    <pre><code class="language-Bash">git init
+git add .
+git commit -m "Inicio del proyecto"
+</code></pre>
+  </li>
+  <li>Usa la integración nativa de Git en la barra lateral de VS Code para hacer commits y ver cambios.</li>
+</ol>
+
+<h2 id="recursos-adicionales">Recursos adicionales</h2>
+
+<p>En este apartado se ofrecen algunos enlaces que consideramos que pueden ser útiles para el desarrollo web en Visual Studio Code:</p>
+
+<ul>
+  <li><a href="https://code.visualstudio.com/docs">Documentación oficial de VS Code</a></li>
+  <li><a href="https://learngitbranching.js.org/">Curso gratuito de Git y GitHub</a></li>
+  <li><a href="https://developer.mozilla.org/es/docs/Web">Guía completa de HTML5 y CSS3</a></li>
+</ul>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Con Visual Studio Code y algunas extensiones clave puedes montar un entorno de desarrollo web en cuestión de minutos. Es flexible, ligero y perfecto tanto para principiantes como para desarrolladores avanzados. Esperamos que esto les haya ayudado a inciarse en el mundo del desarrollo web haciendo uso de Visual Studio Code.</p>
+
+
+  </div><a class="u-url" href="/Blog-eq04/2025/04/14/visual-studio-code-configuracion/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Blog-eq04/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">El super Blog del equipo 04</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">El super Blog del equipo 04</li><li><a class="u-email" href="mailto:jmi240@inlumine.ual.es">jmi240@inlumine.ual.es</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/https%3A%2F%2Fgithub.com%2Fualhmis2025-eq04"><svg class="svg-icon"><use xlink:href="/Blog-eq04/assets/minima-social-icons.svg#github"></use></svg> <span class="username">https://github.com/ualhmis2025-eq04</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

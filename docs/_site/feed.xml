@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://ualhmis2025-eq04.github.io/Blog-eq04/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ualhmis2025-eq04.github.io/Blog-eq04/" rel="alternate" type="text/html" /><updated>2025-04-15T12:00:59+02:00</updated><id>https://ualhmis2025-eq04.github.io/Blog-eq04/feed.xml</id><title type="html">El super Blog del equipo 04</title><subtitle></subtitle><entry><title type="html">Como configurar un entorno de desarrollo local con Visual Studio Code</title><link href="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/04/14/visual-studio-code-configuracion/" rel="alternate" type="text/html" title="Como configurar un entorno de desarrollo local con Visual Studio Code" /><published>2025-04-14T00:22:46+02:00</published><updated>2025-04-14T00:22:46+02:00</updated><id>https://ualhmis2025-eq04.github.io/Blog-eq04/2025/04/14/visual-studio-code-configuracion</id><content type="html" xml:base="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/04/14/visual-studio-code-configuracion/"><![CDATA[<h1 id="cómo-configurar-un-entorno-de-desarrollo-local-con-visual-studio-code">Cómo configurar un entorno de desarrollo local con Visual Studio Code</h1>
+
+<p>Visual Studio Code (VS Code) es uno de los editores de código más populares entre los desarrolladores web. Es rápido, extensible, gratuito y multiplataforma. En esta guía paso a paso aprenderás cómo configurar tu entorno local para comenzar a desarrollar sitios web de forma eficiente.</p>
+
+<h2 id="requisitos-previos">Requisitos previos</h2>
+
+<p>Antes de comenzar, asegúrate de tener:</p>
+
+<ul>
+  <li>Un sistema operativo que soporte VS Code (Windows, macOS o Linux)</li>
+  <li>Conexión a internet</li>
+  <li>Conocimientos básicos de HTML, CSS y/o JavaScript</li>
+</ul>
+
+<h2 id="1-instalar-visual-studio-code">1. Instalar Visual Studio Code</h2>
+
+<p>Dirígete a la <a href="https://code.visualstudio.com/">página oficial de Visual Studio Code</a> y descarga la versión correspondiente a tu sistema operativo.</p>
+
+<h3 id="en-windows-o-macos">En Windows o macOS</h3>
+
+<p>Sigue el instalador y acepta las opciones por defecto.</p>
+
+<h3 id="en-linux">En Linux</h3>
+
+<p>En distribuciones basadas en Debian/Ubuntu:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common apt-transport-https wget
+wget <span class="nt">-q</span> https://packages.microsoft.com/keys/microsoft.asc <span class="nt">-O-</span> | <span class="nb">sudo </span>apt-key add -
+<span class="nb">sudo </span>add-apt-repository <span class="s2">"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"</span>
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>code
+</code></pre></div></div>
+
+<h2 id="2-instalar-extensiones-recomendadas">2. Instalar extensiones recomendadas</h2>
+
+<p>VS Code se potencia con extensiones. Aquí van algunas esenciales para desarrollo web:</p>
+
+<ul>
+  <li>🌐 <strong>Live Server</strong>: Levanta un servidor local con recarga automática.</li>
+  <li>🎨 <strong>Prettier</strong>: Formateador de código automático.</li>
+  <li>📄 <strong>HTML/CSS Support</strong>: Autocompletado y ayudas visuales.</li>
+  <li>🧪 <strong>ESLint</strong>: Linter para JavaScript y buenas prácticas.</li>
+  <li>🌈 <strong>Color Highlight</strong>: Muestra colores directamente en tu código CSS.</li>
+</ul>
+
+<h3 id="cómo-instalarlas">¿Cómo instalarlas?</h3>
+
+<ol>
+  <li>Abre VS Code</li>
+  <li>Ve a la barra lateral izquierda (icono de extensiones o <code class="language-plaintext highlighter-rouge">Ctrl+Shift+X</code>)</li>
+  <li>Busca cada extensión y haz clic en “Instalar”</li>
+</ol>
+
+<h2 id="3-configurar-un-proyecto-básico">3. Configurar un proyecto básico</h2>
+
+<p>Puedes crear una carpeta nueva para tu proyecto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>mi-proyecto-web
+<span class="nb">cd </span>mi-proyecto-web
+code <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Crea un archivo <code class="language-plaintext highlighter-rouge">index.html</code> y escribe lo básico:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Mi Proyecto<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>¡Hola, mundo!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="4-usar-live-server">4. Usar Live Server</h2>
+
+<p>Una vez instalada la extensión <strong>Live Server</strong>:</p>
+
+<ol>
+  <li>Abre tu <code class="language-plaintext highlighter-rouge">index.html</code></li>
+  <li>Haz clic derecho → “<strong>Open with Live Server</strong>”</li>
+  <li>Se abrirá tu navegador en <code class="language-plaintext highlighter-rouge">http://127.0.0.1:5500</code> con tu sitio cargado</li>
+</ol>
+
+<p>Cada vez que guardes el archivo (<code class="language-plaintext highlighter-rouge">Ctrl+S</code>), la página se recargará automáticamente.</p>
+
+<h2 id="5-ajustes-útiles-en-vs-code">5. Ajustes útiles en VS Code</h2>
+
+<p>Presiona <code class="language-plaintext highlighter-rouge">Ctrl+,</code> para abrir la configuración y busca estos ajustes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">"editor.formatOnSave": true</code> → Autoformatea al guardar</li>
+  <li><code class="language-plaintext highlighter-rouge">"liveServer.settings.port": 5500</code> → Fija el puerto del servidor</li>
+  <li><code class="language-plaintext highlighter-rouge">"emmet.includeLanguages"</code> → Añade soporte para Emmet en más lenguajes</li>
+</ul>
+
+<p>También puedes configurar el archivo <code class="language-plaintext highlighter-rouge">.vscode/settings.json</code> así:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"editor.formatOnSave"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"files.autoSave"</span><span class="p">:</span><span class="w"> </span><span class="s2">"onWindowChange"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"liveServer.settings.port"</span><span class="p">:</span><span class="w"> </span><span class="mi">5500</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p>Se recomienda revisar que el puerto 5500 no esté siendo usado por otro servicio, y en caso de que lo esté, debe cambiarlo por otro puerto el cual esté seguro que no será usado.</p>
+
+<h2 id="6-agregar-git-opcional">6. Agregar Git (opcional)</h2>
+
+<p>Si desea usar Git debe seguir los siguientes pasos:</p>
+
+<ol>
+  <li>Instala Git desde git-scm.com</li>
+  <li>Inicia tu repositorio:
+    <pre><code class="language-Bash">git init
+git add .
+git commit -m "Inicio del proyecto"
+</code></pre>
+  </li>
+  <li>Usa la integración nativa de Git en la barra lateral de VS Code para hacer commits y ver cambios.</li>
+</ol>
+
+<h2 id="recursos-adicionales">Recursos adicionales</h2>
+
+<p>En este apartado se ofrecen algunos enlaces que consideramos que pueden ser útiles para el desarrollo web en Visual Studio Code:</p>
+
+<ul>
+  <li><a href="https://code.visualstudio.com/docs">Documentación oficial de VS Code</a></li>
+  <li><a href="https://learngitbranching.js.org/">Curso gratuito de Git y GitHub</a></li>
+  <li><a href="https://developer.mozilla.org/es/docs/Web">Guía completa de HTML5 y CSS3</a></li>
+</ul>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Con Visual Studio Code y algunas extensiones clave puedes montar un entorno de desarrollo web en cuestión de minutos. Es flexible, ligero y perfecto tanto para principiantes como para desarrolladores avanzados. Esperamos que esto les haya ayudado a inciarse en el mundo del desarrollo web haciendo uso de Visual Studio Code.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Cómo configurar un entorno de desarrollo local con Visual Studio Code]]></summary></entry><entry><title type="html">¿Sabes usar Git?</title><link href="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/03/25/sabes-usar-git/" rel="alternate" type="text/html" title="¿Sabes usar Git?" /><published>2025-03-25T22:09:46+01:00</published><updated>2025-03-25T22:09:46+01:00</updated><id>https://ualhmis2025-eq04.github.io/Blog-eq04/2025/03/25/sabes-usar-git</id><content type="html" xml:base="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/03/25/sabes-usar-git/"><![CDATA[<p>Git es una de las herramientas más utilizadas por desarrolladores de todo el mundo… y también una de las más temidas. Aunque casi todos lo usan a diario, <strong>pocos entienden realmente cómo funciona por dentro</strong>. Se vuelve una especie de caja negra: escribimos comandos que “mágicamente” sincronizan o guardan cambios, pero sin saber bien qué está ocurriendo en realidad.</p>
+
+<p>El problema no es Git. Es que nunca nos explicaron cómo pensar Git.</p>
+
+<p>La buena noticia es que <strong>no necesitas saberlo todo para usarlo bien</strong>. Solo hace falta entender unos conceptos clave y cómo interactúan entre sí. Con eso, tus proyectos serán más organizados, tus errores menos catastróficos y tu trabajo en equipo mucho más fluido.</p>
+
+<p><br /></p>
+
+<h2 id="qué-es-un-sistema-de-control-de-versiones">¿Qué es un sistema de control de versiones?</h2>
+
+<p>Un sistema de control de versiones es como una <strong>máquina del tiempo para tu código</strong>. Permite:</p>
+
+<ul>
+  <li>Registrar el historial de cambios.</li>
+  <li>Volver a estados anteriores si algo sale mal.</li>
+  <li>Comparar versiones y ramas.</li>
+  <li>Trabajar en paralelo con otras personas y unificar cambios.</li>
+</ul>
+
+<p>Git es un sistema de control de versiones <strong>distribuido</strong>, lo que significa que cada persona tiene una copia completa del repositorio (incluido el historial completo). Esto permite trabajar sin conexión y tener mucha más flexibilidad y seguridad que otros sistemas centralizados.</p>
+
+<p><br /></p>
+
+<h2 id="el-flujo-de-trabajo-interno-de-git">El flujo de trabajo interno de Git</h2>
+
+<p>Para entender cómo trabaja Git, primero hay que conocer las tres áreas que conforman su flujo de trabajo:</p>
+
+<ol>
+  <li><strong>Directorio de trabajo (Working Directory):</strong> Es donde haces cambios reales en los archivos del proyecto.</li>
+  <li><strong>Área de preparación (Staging Area o Index):</strong> Aquí seleccionas los cambios que quieres incluir en el próximo commit.</li>
+  <li><strong>Repositorio (Git Directory):</strong> Es la base de datos interna donde Git guarda el historial de versiones.</li>
+</ol>
+
+<p>Este diseño permite mucha precisión: puedes modificar varios archivos y solo preparar algunos, o incluso porciones específicas de un archivo, para ser guardados.</p>
+
+<p><br /></p>
+
+<p><img src="/Blog-eq04/assets/git-flow.png" alt="Flujo Git" draggable="false" style="width: 500px; height: auto; display: block; margin: 0 auto;" /></p>
+
+<p><br /></p>
+
+<h2 id="repositorios-locales-y-remotos">Repositorios locales y remotos</h2>
+
+<p><strong>Repositorio local:</strong></p>
+
+<p>Es tu copia personal del proyecto. Contiene el historial completo y es totalmente funcional sin necesidad de estar conectado a internet.</p>
+
+<p><strong>Repositorio remoto:</strong></p>
+
+<p>Es una copia central (habitualmente alojada en plataformas como GitHub, GitLab o Bitbucket), utilizada para colaborar y compartir los cambios.</p>
+
+<p><br /></p>
+
+<p>Cuando clonas un repositorio remoto, Git crea una conexión que te permite sincronizar los cambios entre ambos mediante comandos como <em>push</em> y <em>pull</em>.</p>
+
+<p><br /></p>
+
+<h2 id="los-tres-comandos-clave"><strong>Los tres comandos clave</strong></h2>
+
+<h3 id="1-commit---guardar-tus-cambios-en-el-historial">1. <em>COMMIT</em> - Guardar tus cambios en el historial</h3>
+
+<p><strong>git commit</strong> registra una “foto” de los archivos preparados. Pero para que eso ocurra, primero necesitas mover tus archivos desde el estado “modificado” al área de preparado usando <strong>git add</strong>.</p>
+
+<h4 id="estados-posibles-de-un-archivo">Estados posibles de un archivo:</h4>
+
+<p><strong>Modificado (modified) -</strong> Lo cambiaste, pero Git aún no lo considera listo para guardar.</p>
+
+<p><strong>Preparado (staged) -</strong> Usaste git add y ahora Git sabe que debe incluirlo en el próximo commit.</p>
+
+<p><strong>Commiteado (committed) -</strong> Ya está registrado en el historial.</p>
+
+<p><strong>Sin modificar (unmodified) -</strong> No ha cambiado desde el último commit.</p>
+
+<p>Un flujo típico:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>                           <span class="c"># Todos los cambios pasan a estar staged</span>
+git commit <span class="nt">-m</span> <span class="s2">"Mi primer commit!"</span>   <span class="c"># Se guardan dichos cambios en el historial</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="2-push---subir-tus-cambios-al-remoto">2. <em>PUSH</em> - Subir tus cambios al remoto</h3>
+
+<p>Cuando haces un commit, ese cambio <strong>solo está en tu máquina</strong>. Para compartirlo con tu equipo, necesitas hacer un <strong>git push</strong>.</p>
+
+<h4 id="qué-pasa-internamente">¿Qué pasa internamente?</h4>
+
+<ul>
+  <li>Git verifica qué commits nuevos tienes en tu rama local.</li>
+  <li>Se conecta con el repositorio remoto (por defecto llamado <strong>origin</strong>).</li>
+  <li>Actualiza la rama remota para que apunte al mismo commit que tu rama local.</li>
+</ul>
+
+<p><strong>HEAD</strong> es un puntero que indica el último commit de la rama actual. Cuando haces push, estás diciendo: “actualiza la rama remota para que su HEAD apunte al mismo commit que mi HEAD”.</p>
+
+<p><strong>Origin</strong> es el nombre por defecto que Git le da al remoto desde el que clonaste el proyecto. Puedes tener varios remotos, pero origin suele ser el principal.</p>
+
+<p><br /></p>
+
+<h3 id="3-pull---traer-los-cambios-del-remoto-a-tu-máquina">3. <em>PULL</em> - Traer los cambios del remoto a tu máquina</h3>
+
+<p><strong>git pull</strong> es el comando que <strong>sincroniza tu repositorio local</strong> con el remoto, trayendo los commits nuevos que otros hayan subido.</p>
+
+<p>Pero para entenderlo bien, primero hay que conocer dos formas en que Git puede “unir” esos cambios:
+<br /></p>
+
+<h3 id="git-merge-vs-git-rebase"><em>git merge</em> vs <em>git rebase</em></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Git Merge</th>
+      <th>Git Rebase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Une dos ramas y crea un commit de fusión</td>
+      <td>Reescribe la historia para que tus commits parezcan los últimos</td>
+    </tr>
+    <tr>
+      <td>Mantiene el historial completo</td>
+      <td>Crea un historial más lineal y limpio</td>
+    </tr>
+    <tr>
+      <td>Ideal para proyectos compartidos</td>
+      <td>Ideal para ramas personales antes de hacer push</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p><img src="/Blog-eq04/assets/rebase-merge.png" alt="rebase vs merge" draggable="false" style="width: 500px; height: auto;display: block; margin: 0 auto;" /></p>
+
+<p><br /></p>
+
+<p>Cuando haces <strong>git pull</strong>, Git por defecto hace un <strong>merge</strong>. Pero puedes configurarlo para que use <strong>rebase</strong>, si prefieres evitar los commits de fusión innecesarios.</p>
+
+<p><br /></p>
+
+<h2 id="ahora-sabes-un-poco-más-de-git">¡Ahora sabes un poco más de Git!</h2>
+<p>¿Antes sabías cómo funcionaba? Puede que sí, o puede que ahora entiendas todo mucho mejor.</p>
+
+<p>Te invitamos a probar por tu propia mano el funcionamiento de esta poderosa herramienta, entender Git cambia por completo tu experiencia como desarrollador. No se trata solo de memorizar comandos, sino de entender cómo interactúan.</p>
+
+<p>Dominar estos conceptos te dará más control y confianza al momento de trabajar en tus proyectos, tanto solo como en equipo. Y como puedes observar, es más sencillo de lo que parece.</p>
+
+<p>¡Bienvenido al mundo de Git! ヾ(≧▽≦*)o</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Git es una de las herramientas más utilizadas por desarrolladores de todo el mundo… y también una de las más temidas. Aunque casi todos lo usan a diario, pocos entienden realmente cómo funciona por dentro. Se vuelve una especie de caja negra: escribimos comandos que “mágicamente” sincronizan o guardan cambios, pero sin saber bien qué está ocurriendo en realidad.]]></summary></entry></feed>

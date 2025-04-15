@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>¿Sabes usar Git? | El super Blog del equipo 04</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="¿Sabes usar Git?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Git es una de las herramientas más utilizadas por desarrolladores de todo el mundo… y también una de las más temidas. Aunque casi todos lo usan a diario, pocos entienden realmente cómo funciona por dentro. Se vuelve una especie de caja negra: escribimos comandos que “mágicamente” sincronizan o guardan cambios, pero sin saber bien qué está ocurriendo en realidad." />
+<meta property="og:description" content="Git es una de las herramientas más utilizadas por desarrolladores de todo el mundo… y también una de las más temidas. Aunque casi todos lo usan a diario, pocos entienden realmente cómo funciona por dentro. Se vuelve una especie de caja negra: escribimos comandos que “mágicamente” sincronizan o guardan cambios, pero sin saber bien qué está ocurriendo en realidad." />
+<link rel="canonical" href="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/03/25/sabes-usar-git/" />
+<meta property="og:url" content="https://ualhmis2025-eq04.github.io/Blog-eq04/2025/03/25/sabes-usar-git/" />
+<meta property="og:site_name" content="El super Blog del equipo 04" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-25T22:09:46+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="¿Sabes usar Git?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-25T22:09:46+01:00","datePublished":"2025-03-25T22:09:46+01:00","description":"Git es una de las herramientas más utilizadas por desarrolladores de todo el mundo… y también una de las más temidas. Aunque casi todos lo usan a diario, pocos entienden realmente cómo funciona por dentro. Se vuelve una especie de caja negra: escribimos comandos que “mágicamente” sincronizan o guardan cambios, pero sin saber bien qué está ocurriendo en realidad.","headline":"¿Sabes usar Git?","mainEntityOfPage":{"@type":"WebPage","@id":"https://ualhmis2025-eq04.github.io/Blog-eq04/2025/03/25/sabes-usar-git/"},"url":"https://ualhmis2025-eq04.github.io/Blog-eq04/2025/03/25/sabes-usar-git/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Blog-eq04/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://ualhmis2025-eq04.github.io/Blog-eq04/feed.xml" title="El super Blog del equipo 04" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Blog-eq04/">El super Blog del equipo 04</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Blog-eq04/jmi240/">Conoce a jmi240</a><a class="page-link" href="/Blog-eq04/gnr267/">Conoce a gnr267</a><a class="page-link" href="/Blog-eq04/contacto/">Contacto</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">¿Sabes usar Git?</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-03-25T22:09:46+01:00" itemprop="datePublished">Mar 25, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Git es una de las herramientas más utilizadas por desarrolladores de todo el mundo… y también una de las más temidas. Aunque casi todos lo usan a diario, <strong>pocos entienden realmente cómo funciona por dentro</strong>. Se vuelve una especie de caja negra: escribimos comandos que “mágicamente” sincronizan o guardan cambios, pero sin saber bien qué está ocurriendo en realidad.</p>
+
+<p>El problema no es Git. Es que nunca nos explicaron cómo pensar Git.</p>
+
+<p>La buena noticia es que <strong>no necesitas saberlo todo para usarlo bien</strong>. Solo hace falta entender unos conceptos clave y cómo interactúan entre sí. Con eso, tus proyectos serán más organizados, tus errores menos catastróficos y tu trabajo en equipo mucho más fluido.</p>
+
+<p><br /></p>
+
+<h2 id="qué-es-un-sistema-de-control-de-versiones">¿Qué es un sistema de control de versiones?</h2>
+
+<p>Un sistema de control de versiones es como una <strong>máquina del tiempo para tu código</strong>. Permite:</p>
+
+<ul>
+  <li>Registrar el historial de cambios.</li>
+  <li>Volver a estados anteriores si algo sale mal.</li>
+  <li>Comparar versiones y ramas.</li>
+  <li>Trabajar en paralelo con otras personas y unificar cambios.</li>
+</ul>
+
+<p>Git es un sistema de control de versiones <strong>distribuido</strong>, lo que significa que cada persona tiene una copia completa del repositorio (incluido el historial completo). Esto permite trabajar sin conexión y tener mucha más flexibilidad y seguridad que otros sistemas centralizados.</p>
+
+<p><br /></p>
+
+<h2 id="el-flujo-de-trabajo-interno-de-git">El flujo de trabajo interno de Git</h2>
+
+<p>Para entender cómo trabaja Git, primero hay que conocer las tres áreas que conforman su flujo de trabajo:</p>
+
+<ol>
+  <li><strong>Directorio de trabajo (Working Directory):</strong> Es donde haces cambios reales en los archivos del proyecto.</li>
+  <li><strong>Área de preparación (Staging Area o Index):</strong> Aquí seleccionas los cambios que quieres incluir en el próximo commit.</li>
+  <li><strong>Repositorio (Git Directory):</strong> Es la base de datos interna donde Git guarda el historial de versiones.</li>
+</ol>
+
+<p>Este diseño permite mucha precisión: puedes modificar varios archivos y solo preparar algunos, o incluso porciones específicas de un archivo, para ser guardados.</p>
+
+<p><br /></p>
+
+<p><img src="/Blog-eq04/assets/git-flow.png" alt="Flujo Git" draggable="false" style="width: 500px; height: auto; display: block; margin: 0 auto;" /></p>
+
+<p><br /></p>
+
+<h2 id="repositorios-locales-y-remotos">Repositorios locales y remotos</h2>
+
+<p><strong>Repositorio local:</strong></p>
+
+<p>Es tu copia personal del proyecto. Contiene el historial completo y es totalmente funcional sin necesidad de estar conectado a internet.</p>
+
+<p><strong>Repositorio remoto:</strong></p>
+
+<p>Es una copia central (habitualmente alojada en plataformas como GitHub, GitLab o Bitbucket), utilizada para colaborar y compartir los cambios.</p>
+
+<p><br /></p>
+
+<p>Cuando clonas un repositorio remoto, Git crea una conexión que te permite sincronizar los cambios entre ambos mediante comandos como <em>push</em> y <em>pull</em>.</p>
+
+<p><br /></p>
+
+<h2 id="los-tres-comandos-clave"><strong>Los tres comandos clave</strong></h2>
+
+<h3 id="1-commit---guardar-tus-cambios-en-el-historial">1. <em>COMMIT</em> - Guardar tus cambios en el historial</h3>
+
+<p><strong>git commit</strong> registra una “foto” de los archivos preparados. Pero para que eso ocurra, primero necesitas mover tus archivos desde el estado “modificado” al área de preparado usando <strong>git add</strong>.</p>
+
+<h4 id="estados-posibles-de-un-archivo">Estados posibles de un archivo:</h4>
+
+<p><strong>Modificado (modified) -</strong> Lo cambiaste, pero Git aún no lo considera listo para guardar.</p>
+
+<p><strong>Preparado (staged) -</strong> Usaste git add y ahora Git sabe que debe incluirlo en el próximo commit.</p>
+
+<p><strong>Commiteado (committed) -</strong> Ya está registrado en el historial.</p>
+
+<p><strong>Sin modificar (unmodified) -</strong> No ha cambiado desde el último commit.</p>
+
+<p>Un flujo típico:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>                           <span class="c"># Todos los cambios pasan a estar staged</span>
+git commit <span class="nt">-m</span> <span class="s2">"Mi primer commit!"</span>   <span class="c"># Se guardan dichos cambios en el historial</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="2-push---subir-tus-cambios-al-remoto">2. <em>PUSH</em> - Subir tus cambios al remoto</h3>
+
+<p>Cuando haces un commit, ese cambio <strong>solo está en tu máquina</strong>. Para compartirlo con tu equipo, necesitas hacer un <strong>git push</strong>.</p>
+
+<h4 id="qué-pasa-internamente">¿Qué pasa internamente?</h4>
+
+<ul>
+  <li>Git verifica qué commits nuevos tienes en tu rama local.</li>
+  <li>Se conecta con el repositorio remoto (por defecto llamado <strong>origin</strong>).</li>
+  <li>Actualiza la rama remota para que apunte al mismo commit que tu rama local.</li>
+</ul>
+
+<p><strong>HEAD</strong> es un puntero que indica el último commit de la rama actual. Cuando haces push, estás diciendo: “actualiza la rama remota para que su HEAD apunte al mismo commit que mi HEAD”.</p>
+
+<p><strong>Origin</strong> es el nombre por defecto que Git le da al remoto desde el que clonaste el proyecto. Puedes tener varios remotos, pero origin suele ser el principal.</p>
+
+<p><br /></p>
+
+<h3 id="3-pull---traer-los-cambios-del-remoto-a-tu-máquina">3. <em>PULL</em> - Traer los cambios del remoto a tu máquina</h3>
+
+<p><strong>git pull</strong> es el comando que <strong>sincroniza tu repositorio local</strong> con el remoto, trayendo los commits nuevos que otros hayan subido.</p>
+
+<p>Pero para entenderlo bien, primero hay que conocer dos formas en que Git puede “unir” esos cambios:
+<br /></p>
+
+<h3 id="git-merge-vs-git-rebase"><em>git merge</em> vs <em>git rebase</em></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Git Merge</th>
+      <th>Git Rebase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Une dos ramas y crea un commit de fusión</td>
+      <td>Reescribe la historia para que tus commits parezcan los últimos</td>
+    </tr>
+    <tr>
+      <td>Mantiene el historial completo</td>
+      <td>Crea un historial más lineal y limpio</td>
+    </tr>
+    <tr>
+      <td>Ideal para proyectos compartidos</td>
+      <td>Ideal para ramas personales antes de hacer push</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p><img src="/Blog-eq04/assets/rebase-merge.png" alt="rebase vs merge" draggable="false" style="width: 500px; height: auto;display: block; margin: 0 auto;" /></p>
+
+<p><br /></p>
+
+<p>Cuando haces <strong>git pull</strong>, Git por defecto hace un <strong>merge</strong>. Pero puedes configurarlo para que use <strong>rebase</strong>, si prefieres evitar los commits de fusión innecesarios.</p>
+
+<p><br /></p>
+
+<h2 id="ahora-sabes-un-poco-más-de-git">¡Ahora sabes un poco más de Git!</h2>
+<p>¿Antes sabías cómo funcionaba? Puede que sí, o puede que ahora entiendas todo mucho mejor.</p>
+
+<p>Te invitamos a probar por tu propia mano el funcionamiento de esta poderosa herramienta, entender Git cambia por completo tu experiencia como desarrollador. No se trata solo de memorizar comandos, sino de entender cómo interactúan.</p>
+
+<p>Dominar estos conceptos te dará más control y confianza al momento de trabajar en tus proyectos, tanto solo como en equipo. Y como puedes observar, es más sencillo de lo que parece.</p>
+
+<p>¡Bienvenido al mundo de Git! ヾ(≧▽≦*)o</p>
+
+  </div><a class="u-url" href="/Blog-eq04/2025/03/25/sabes-usar-git/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Blog-eq04/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">El super Blog del equipo 04</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">El super Blog del equipo 04</li><li><a class="u-email" href="mailto:jmi240@inlumine.ual.es">jmi240@inlumine.ual.es</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/https%3A%2F%2Fgithub.com%2Fualhmis2025-eq04"><svg class="svg-icon"><use xlink:href="/Blog-eq04/assets/minima-social-icons.svg#github"></use></svg> <span class="username">https://github.com/ualhmis2025-eq04</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
