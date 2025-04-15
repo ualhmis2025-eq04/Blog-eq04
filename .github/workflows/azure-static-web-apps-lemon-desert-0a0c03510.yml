@@ -19,6 +19,10 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
       - name: Build the site
         run: |
           bundle exec jekyll build --config _config-azure.yml --destination docs/_site
